@@ -1,0 +1,105 @@
+#Heidi McLean
+#My first section of code is a MadLib that I created myself.It includes variables and concatenates strings.
+#The second section of code was inspired by a MadLib I found online. It uses variables and concatenates strings as well.
+#sources: POGIL 3, 4, and 5
+def main():
+#MadLib1: Animal Adventure
+    animalName = input("Enter an animal name: ")
+    colorName = input("Enter a color name: ")
+    fruitName = input("Enter the name of a fruit, plural: ")
+    garmentName = input("Enter the name of a garment: ")
+    nounPlace1 = input("Enter a noun that is a place: ")
+    nounPlace2 = input("Enter a second noun that is also a place: ")
+    animalName2 = input("Enter a second animal name: ")
+    gameName = input("Enter a game: ")
+    emotionName = input("Enter an emotion: ")
+    sentence1 = "The " + animalName + " bought a " + colorName + " " + garmentName + " and " + fruitName + " at the " + nounPlace1 + "."
+    sentence2 = " The " + animalName + " then went to the " + nounPlace2 + " and saw a " + animalName2 + " playing " + gameName + "."
+    sentence3 = " Now the " + animalName + " is " + emotionName + " because they want to play " + gameName + "."
+    print(sentence1 + sentence2 + sentence3)
+
+#madLib2: Star Wars
+    adjective1 = input("Enter an adjective: ")
+    noun1 = input("Enter a noun: ")
+    adjective2 = input("Enter a second adjective: ")
+    nounPlace = input("Enter a noun that is a place: ")
+    adjective3 = input("Enter another adjective: ")
+    adjective4 = input("Enter another adjective: ")
+    pluralNoun1 = input("Enter a plural noun that is a vehicle: ")
+    adjective5 = input("Enter another adjective: ")
+    adjective6 = input("Enter another adjective: ")
+    pluralNoun2 = input("Enter a plural noun: ")
+    adjective7 = input("Enter another adjective: ")
+    pluralNoun3 = input("Enter another plural noun: ")
+    pluralNoun4 = input("Enter another plural noun: ")
+    adjective8 = input("Enter another adjective: ")
+    noun2 = input("Enter another noun: ")
+    verb = input("Enter a verb: ")
+    adjective9 = input("Enter another adjective: ")
+    verb2 = input("Enter another verb: ")
+    pluralNoun5 = input("Enter another plural noun: ")
+    pluralNoun6 = input("Enter a plural noun that is a type of job: ")
+    adjective10 = input("Enter another adjective: ")
+    verb3 = input("Enter another verb: ")
+    adjective11 = input("Enter another adjective, sorry last one I promise: ")
+    sentence4 = "Star Wars is a " + adjective1 + " " + noun1 + " of " + adjective2 + " versus evil in a " + nounPlace + " far far away. "
+    sentence5 = "There are " + adjective3 + " battles between " + adjective4 + " " + pluralNoun1 + " in " + adjective5 + " space and " + adjective6 + " duels with " + pluralNoun2 + " called " + adjective7 + " sabers. "
+    sentence6 = pluralNoun3 + " called 'droids' are helpers and " + pluralNoun4 + " to the heros. "
+    sentence7 = "A " + adjective8 + " power called The " + noun2 + " " + verb + "s people to do  " + adjective9 + " things, like " + verb2 + " " + pluralNoun5 + ". "
+    sentence8 = "The Jedi " + pluralNoun6 + " use The Force for the " + adjective10 + " side and the Sith " + verb3 + " it for the " + adjective11 + " side."
+    print(sentence4 + sentence5 + sentence6 + sentence7 + sentence8) #concatenates the strings stored in variables together
+
+#math
+    print(16+3) #adds 16 and 3
+    print(16-3) #subracts 3 from 16
+    print(16*3) #multiplies 16 and 3
+    print(16**3) #makes 3 the exponent of 16
+    print(16/3) #divides 16 by 3
+    print(16//3) #floor division, cuts of the decimal
+    print(16%3) #gives the remainder of 16 divided by 3, modulus
+
+#multiplying string operators
+    myWord = "banana!" * 10 #outputs "banana!" 10 times
+    print(myWord)
+
+#use of sep=
+    itemName = input("Enter the name of the item: ")
+    numItems = int(input("Enter the number of items: "))
+    itemCost = float(input("Enter the cost of one item: "))
+    totalCost = numItems*itemCost
+    print("Item name : ", itemName)
+    print("Cost of one item: ", itemCost)
+    print("number of items purchased: ", numItems)
+    print("Total cost: $", format(totalCost, "0.2f"), sep='')
+    
+#budgeting for a shopping trip
+    income = int(input("Enter your income: "))
+    spending = 0
+    if(income >= 100000):
+        spending = 10000
+    elif(income >= 75000):
+        spending = 5000
+    elif(income >= 50000):
+        spending = 2500
+    elif(income >= 25000):
+        spending = 1000
+    print("Your spending is ${:,.2f}".format(spending))
+
+
+#boolean and relational operators
+    x=3
+    y=5
+    print(x==y)
+    print(x!=y)
+
+    numBooks=40
+    print((numBooks>5) and (numBooks<100))
+    print((numBooks<5) or (numBooks>100))
+    print(not(numBooks*10==100))
+    #for loop
+    name = input("Enter your name: ")
+    for x in range(20):
+        print(name)
+
+    
+main()
